@@ -1,0 +1,47 @@
+/**
+*   _themes.scss
+*   当HTML的data-theme为blue时，样式引用blue
+*   data-theme为其他值时，就采用对应的默认样式
+*   这里我定义了5套主题方案，想要再多只需在`$themes`里加就行了
+*   注意一点是，每套配色方案里的key可以自定义但必须一致，不然就会混乱
+*   这是定义好的对应变量的颜色（需要什么都可以自行定义并引用）：
+*   字体： font_color1
+*   背景： background_color1
+*   边框： border_color1
+**/
+
+$themes: (blue: (font_color1: #ffffff,
+    background_color2:#146fd7,
+    background_color1: linear-gradient(to right, rgb(20, 111, 215), rgb(20, 111, 215)),
+    background_image: linear-gradient(to right, #2b32b2, #4465C5),
+    border_color1: #0056cc,
+  ),
+  glup: (font_color1: #ffffff,
+    background_color2:#B12D69,
+    background_color1: linear-gradient(to right, #771340, #B12D69),
+    background_image: linear-gradient(to right, #a83279, #b04167),
+    border_color1: #e426fd,
+  ),
+  red: (font_color1: #ffffff,
+    background_color2:#cb2d3e,
+    background_color1: linear-gradient(to right, #904100, #CB5C00),
+    background_image: linear-gradient(to right, #cb2d3e, #d0313d),
+    border_color1: #fd5451,
+  ),
+  green: (font_color1: #ffffff,
+    background_color2:#407916,
+    background_color1: linear-gradient(to right, #407916, #569D21),
+    background_image: linear-gradient(to right, #2E8942, #3EA655),
+    border_color1: #0dd78d,
+  ),
+  black: (font_color1: #ffffff,
+    background_color2:#343A40,
+    background_color1: linear-gradient(to right, #343A40, #424A51),
+    background_image: linear-gradient(to right, rgb(54, 58, 65), rgb(54, 58, 65)),
+    border_color1: #000,
+  ),
+  white: (font_color1: #fff,
+    background_color1: #fff,
+    background_image: #fff,
+    border_color1: #fff,
+  ));
